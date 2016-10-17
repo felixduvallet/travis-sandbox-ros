@@ -21,7 +21,7 @@ install:
   # checkout catkin for catkin_test_results script
   - git clone https://github.com/ros/catkin /tmp/catkin
   # run devel job for a ROS repository with the same name as this repo
-  - export REPOSITORY_NAME=`basename $TRAVIS_BUILD_DIR`
+  - export REPOSITORY_NAME=grasp-synergy
   # use the code already checked out by Travis
   - mkdir -p $JOB_PATH/catkin_workspace/src
   - cp -R $TRAVIS_BUILD_DIR $JOB_PATH/catkin_workspace/src/
